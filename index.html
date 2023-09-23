@@ -1,0 +1,519 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pic-Plus</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="/fav/icons8-photo-gallery-cloud-32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white px-3 border-bottom fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fw-normal" href="#"
+            >Pic-<span class="fs-2 fw-normal text-info">Plus</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse fs-5 text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-info"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Seo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Training</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">consulting</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- slider bar -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="about my-5">
+      <div class="container-fluid ">
+        <div class="user-select-none my-5">
+          <h1 class="text-center ">
+            About
+            <span class="text-info">me</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+            <h1 class="mt-3 user-select-none">
+              what do you <span class="text-info">want to know?</span>
+            </h1>
+            <p class="p-2 user-select-none">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, consequuntur dicta deleniti voluptas repudiandae error
+              nam beatae tempore iusto sunt, eum delectus aperiam corrupti rem
+              sapiente et doloremque iure unde.
+            </p>
+            <button type="button" class="btn btn-screen fs-5 p-2 mb-5">
+              Read more
+            </button>
+
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" data-aos="zoom-in" data-aos-offset="200"id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    My Hobbies
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Capturing life's moments through my lens, while finding joy
+                    in nature, painting, and culinary adventures.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    My Qualification
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Backed by formal education and extensive experience, I'm a
+                    skilled photographer ready to freeze time with art.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      My Dreams
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      To exhibit globally, documenting diverse cultures, and
+                      leaving a legacy through evocative visuals.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+            <div>
+              <img
+                src="img/s4.jpg"
+                class="img-fluid img-thumbnail mt-3"
+                alt="bio"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section for services -->
+    <section class="services bg-light py-4">
+      <div class="container">
+        <div class="user-select-none my-5 p-5 bg-light">
+          <h1 class="text-center" data-aos="fade-right" data-aos-offset="400">
+            Our
+            <span class="text-info">Services</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row" data-aos="flip-down">
+          <!-- first card  -->
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Wedding <br>Photography</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, eum.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-info text-black-50">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Engagement <br> Photography</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, eum.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-info text-black-50">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- third card  -->
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Event <br />Photography</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, eum.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-info text-black-50">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- our team  -->
+<section class="team bg-light">
+  <div class="container">
+    <div class="user-select-none my-5 p-5 bg-light">
+      <h1 class="text-center">
+        Our
+        <span class="text-info">Team</span>
+      </h1>
+      <hr class="w-25 m-auto" />
+    </div>
+    <div class="row" data-aos="fade-up"
+    data-aos-duration="3000">
+      <!-- first details   -->
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="img/s5.jpg" alt="bio img" class="img-fluid rounded-circle border border-primary p1">
+            <h5 class="card-title mt-4 text-capitalize">sara prajapati</h5>
+            <p class="card-text text-capitalize">
+              Photo Editor
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-info text-black-50 text-capitalize">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second card  -->
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="img/s2.jpg" alt="bio img" class="img-fluid rounded-circle border border-primary p1">
+            <h5 class="card-title mt-4 text-capitalize">Uday devnani</h5>
+            <p class="card-text text-capitalize">
+              photographer
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-info text-black-50 text-capitalize">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- third card  -->
+      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="img/s6.jpg" alt="bio img" class="img-fluid rounded-circle border border-primary p1">
+            <h5 class="card-title mt-4">Jay Patel</h5>
+            <p class="card-text text-capitalize">
+              Video Editor
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-info text-black-50 text-capitalize">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+    
+
+  </div>
+</section>
+
+<!-- contact us  -->
+<section class="contact">
+  <div class="container">
+    <div class="user-select-none my-5 p-5 bg-light">
+      <h1 class="text-center text-capitalize" data-aos="fade-down">
+        feel free to
+        <span class="text-info text-capitalize">contact us</span>
+      </h1>
+      <hr class="w-50 m-auto" />
+    </div>
+
+    <div class="row p-4 " data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+         
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12  m-auto text-end">
+        <img src="img/s1.jpg" alt=""  class="p-2 img-fluid ms-4">
+
+
+      </div>
+    </div>
+</section>
+
+<!-- footer  -->
+<footer>
+  <div class="container-fluid bg-info text-white fs2 text-capitalize">
+  <p class="text-center p-2">developed by pruthvisinh vaghela</p>
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
